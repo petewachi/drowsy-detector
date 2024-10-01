@@ -17,13 +17,13 @@ Road accidents caused by drowsy driving contribute to over 1.35 million deaths a
 ### Tools & Technologies
 
 - **Facial Detection Algorithm:** Harr-like features combined with CNN models were applied for detecting driver drowsiness.
-- **Technologies Used:**
-    - **OpenCV** for video stream processing.
-    - **MATLAB Simulink** and **VI-DriveSim** for ADAS development and testing.
-    - **Qt QML** and **Figma** for driver interface design and development.
+- **Technologies Used:** **OpenCV** for video stream processing.
 - **Data Collection:** The YawDD dataset (Abtahi et al. 2014) was used to train the CNN models to detect yawning and eye closures from video footage.
   
 ### Model Architecture
+<p>
+  <img src="Figures\ClosedEyeModel.png" style="width: 1080px">
+</p>
 
 - **Eye Closure Detection:** A CNN was trained using eye images to detect drowsiness based on prolonged eye closure (e.g., greater than 2 seconds).
 - **Yawning Detection:** Another CNN model was trained to detect yawning from mouth movement, using **grayscale image input**.
@@ -34,6 +34,10 @@ Road accidents caused by drowsy driving contribute to over 1.35 million deaths a
 ## Research Results
 
 The **driver drowsiness detection system** demonstrated the following key outcomes:
+<p float="left">
+    <img src="Figures\Normal.jpg" style="width: 400px">
+    <img src="Figures\Yawn.jpg" style="width: 400px">
+</p>
 
 - **Improved Response Time:** The system effectively detected drowsiness, issuing alerts within 1 second of detecting prolonged eye closure.
 - **Accuracy:** CNN models achieved **93% accuracy** in detecting closed eyes and **85% accuracy** in detecting yawning under controlled lighting conditions.
@@ -55,7 +59,7 @@ There is considerable room for further development, particularly in the followin
 
 ## Related Skills
 
-- **Human Factors Engineering:** Applied principles to create a user-centric monitoring and alert system for driver safety.
+- **Human Factors Research:** Applied principles to create a user-centric monitoring and alert system for driver safety.
 - **Machine Learning:** Trained and fine-tuned CNN models using large datasets to classify drowsiness symptoms with python.
 ---
 
